@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .btn-search:hover {
+            background-color: black !important;
+        }
+
+        .wrapper-menu .list-inline-item:hover {
+            cursor: pointer;
+            opacity: 0.8;
+        }
+
+        body {
+            overflow-X: hidden !important;
+            height: 100vh;
+            width: 100vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper-main" style="width: 100%; height: 100%;">
+        <nav>
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar bg-body-tertiary"
+                        style="padding: 5px 0; background-color: rgb(92, 92, 152) !important;">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-2 d-flex align-items-center">
+                                    <a href="" style="width: 20%;"><img src="images/Co-cua-cac-nuoc-Han-Quoc.png" alt=""
+                                            width="80%"></a>
+                                    <a href="" style="width: 20%;"><img src="images/la-co-to-quoc-viet-nam.jpg" alt=""
+                                            width="80%"></a>
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="row">
+                                        <div class="col-md-9"></div>
+                                        <div class="col-md-3">
+                                            <form class="d-flex" role="search">
+                                                <input class="form-control me-2" type="search"
+                                                    placeholder="Nhập từ cần tìm" aria-label="Search">
+                                                <button class="btn btn-search"
+                                                    style="width: 50%; background-color: #5d5b5b; color:white; border-radius: 0; border-color: rgba(255, 255, 255, 0.105);"
+                                                    type="submit">Tìm kiếm</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </nav>
+
+        <div class="row">
+            <div class="wrapper-menu bg-primary">
+                <ul class="list-inline" style="margin: 0; width: 100%; height: 100%;">
+                    <li class="list-inline-item text-light p-3"
+                        style="text-transform: uppercase; border-right: white 1px solid; ">Trang chủ</li>
+                    <li class="list-inline-item text-light p-3"
+                        style="text-transform: uppercase; border-right: white 1px solid;  height: 100%; margin: 0;">Giới
+                        thiệu</li>
+                    <li class="list-inline-item text-light p-3"
+                        style="text-transform: uppercase; border-right: white 1px solid;  height: 100%; margin: 0;">Sản
+                        phẩm
+                    </li>
+                    <li class="list-inline-item text-light p-3"
+                        style="text-transform: uppercase; border-right: white 1px solid;  height: 100%; margin: 0;">Giỏ
+                        hàng
+                    </li>
+                    <li class="list-inline-item text-light p-3"
+                        style="text-transform: uppercase; border-right: white 1px solid;  height: 100%; margin: 0;">Liên
+                        hệ
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="picture" style="height: 50%;">
+            <div class="row" style="height: 100%;">
+                <div class="col-md-12" style="height: 100%;">
+                    <img src="images/anh_nen.gif" alt="" width="100%" height="100%">
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <b style="text-transform: uppercase;" class="text-primary">Danh mục sản phẩm</b>
+                    <hr>
+                    <div class="product" style="margin-left: 3%; height: 100%;">
+                        <b class="text-primary">Hàng gia dụng</b>
+                        <hr>
+                        <b class="text-primary">Thời trang & phụ kiện</b>
+                        <hr>
+                        <b class="text-primary">Thiết bị điện tử </b>
+                        <hr>
+                        <div class="img-product">
+                            <img src="images/Co-cua-cac-nuoc-Han-Quoc.png" alt="" width="100%"
+                                style="margin-bottom: 20px; border: 1px solid rgba(130, 121, 121, 0.427);">
+                            <img src="images/la-co-to-quoc-viet-nam.jpg" alt="" width="100%"
+                                style="border: 1px solid rgba(130, 121, 121, 0.427);">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-9">
+                    <div class="title-product">
+                        <div class="row">
+                            <div class="col-md-11 d-flex " style="position: relative;">
+                                <h5 style="width: max-content;">Danh sách sản phẩm</h5>
+                                <hr style="width: 70% ; color:rgb(0, 0, 0); position: absolute; top:17%; left: 20%;">
+                            </div>
+                            <div class="col-md-1"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="items">
+                                    <img src="images/sanpham1.jpg" alt="" width="95%" style="padding: 10px 0;">
+                                    <b class="text-primary">Bút luyện viết chữ</b>
+
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="items">
+                                    <img src="images/sanpham1.jpg" alt="" width="95%" style="padding: 10px 0;">
+                                    <b class="text-primary">Bút luyện viết chữ</b>
+
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="items">
+                                    <img src="images/sanpham1.jpg" alt="" width="95%" style="padding: 10px 0;">
+                                    <b class="text-primary">Bút luyện viết chữ</b>
+
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="items">
+                                    <img src="images/sanpham1.jpg" alt="" width="95%" style="padding: 10px 0;">
+                                    <b class="text-primary">Bút luyện viết chữ</b>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 bg-secondary text-center mt-4 pt-2 pb-2">
+                             <div style="font-weight: bold;">Địa chỉ : 254 Nguyễn Văn Linh , Quận Thanh Khê - Tp.Đà Nẵng </div>
+                             <div style="font-weight: bold;">Điện thoại : (+84) 236.3650403</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
